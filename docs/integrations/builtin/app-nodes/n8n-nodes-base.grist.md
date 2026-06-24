@@ -17,9 +17,20 @@ Refer to [Grist credentials](/integrations/builtin/credentials/grist.md) for gui
 ## Operations
 
 * Create rows in a table
+* Create or update rows in a table (upsert)
 * Delete rows from a table
 * Read rows from a table
 * Update rows in a table
+
+## Select the document and table
+
+The **Document** and **Table** parameters are resource locators. Choose **From List** to pick from the documents and tables your account can access, or switch to **By ID** to enter the IDs directly. You can find a document's ID in its URL or in **Document Settings**.
+
+## Map columns
+
+For the **Create**, **Update**, and **Create or Update** operations, the node loads the table's columns so you can map a value to each one. Column types are detected automatically (for example, numbers, toggles, dates, and choices). Formula columns are read-only and can't be set.
+
+For **Create or Update**, choose which column(s) to match on: the node updates the existing row when a match is found, and creates a new row otherwise.
 
 ## Templates and examples
 

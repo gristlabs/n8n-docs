@@ -32,13 +32,13 @@ Refer to [Grist's webhook documentation](https://support.getgrist.com/webhooks/)
 
 Use these parameters to configure your node.
 
-### Document ID
+### Document
 
-The ID of the Grist document to watch. You can find it in the document's URL or in **Document Settings**.
+The Grist document to watch. Choose **From List** to pick a document your account can access, or switch to **By ID** to enter the document ID directly. You can find the ID in the document's URL or in **Document Settings**.
 
-### Table ID
+### Table
 
-The ID of the table within the document to watch.
+The table within the document to watch. Choose **From List** to pick a table from the selected document, or switch to **By ID** to enter the table ID directly.
 
 ### Trigger On
 
