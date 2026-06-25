@@ -45,14 +45,14 @@ To update or delete a particular record, you need the Row ID. There are two ways
 
 Create a new column in your Grist table with the formula `$id`.
 
-**Use the Get All operation**
+**Use the Get Many Rows operation**
 
-The **Get All** operation returns the Row ID of each record along with the fields.
+The **Get Many Rows** operation returns the Row ID of each record along with the fields.
  
 You can get it with the expression `{{$("GristNodeName").item.json.id}}`.
 
 
-## Filter records when using the Get All operation
+## Filter records when using the Get Many Rows operation
 
 - Select **Add Option** and select **Filter** from the dropdown list.
 - You can add filters for any number of columns. The result will only include records which match all the columns.

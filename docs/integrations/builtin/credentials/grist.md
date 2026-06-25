@@ -46,11 +46,11 @@ OAuth2 lets n8n connect to Grist without storing a long-lived API key. Grist use
 To configure this credential, you'll need:
 
 - A **Grist URL** (see [Grist URL](#grist-url) above).
-- A **Client ID** and **Client Secret** from a Grist Connected app.
+- A **Client ID** and **Client Secret** from a Grist OAuth app.
 
-To create the Connected app in Grist:
+To create the OAuth app in Grist:
 
-1. In Grist, register a new Connected app (OAuth app).
+1. In Grist, open the account menu (top right), then go to **Account settings** > **Developer** > **OAuth apps** and register a new app.
 2. Set the redirect URL to your n8n OAuth callback: `https://<n8n-host>/rest/oauth2-credential/callback`. n8n shows the exact **OAuth Redirect URL** to use on the credential screen.
 3. Copy the generated **Client ID** and **Client Secret** into the n8n credential.
 4. Select **Connect my account** and complete the Grist consent screen.
